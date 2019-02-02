@@ -1,1 +1,6 @@
-<%= link_to (file.filename || file.path).split('/').last, file.url, target: '_blank' %>
+
+<div class="class-preview-image">
+  <%= file.url, target: '_blank' do %>
+    <img src="<%= file.url %>" alt="">
+  <% end %>
+</div>
